@@ -1,0 +1,22 @@
+on: 
+  push:
+    branches:
+    - "main"
+    paths:
+    - "src/**"
+name: Deploy via FTP
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get latest code
+      uses: actions/checkout@v3
+    
+    - name: FTP Deploy
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.ftp.host }}
+        username: $ {{ secrets.fpt.user }}
+        password: ${{ secrets.ftp_password }}
+        localDir: "src"
