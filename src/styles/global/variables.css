@@ -1,5 +1,12 @@
 :root {
     /* Colors */
+    --color-white: #FFF;
+    --color-black: #000;
+    --color-blue1: #9CC3E6;
+    --color-blue2: #1D72A7;
+    --color-violet: #4C1A57;
+    --color-pink1: #F87575;
+    --color-pink2: #FFA9A3;
 
     /* Font sizes */
     --h1: 89px;
