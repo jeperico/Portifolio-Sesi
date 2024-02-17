@@ -1,0 +1,31 @@
+#header-area {
+    height: 8rem;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem 0 4rem;
+    position: sticky;
+    transition: top 1s;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+.scrollHide {
+    top: -30rem !important;
+}
+
+#logo-sesi-header {
+    height: 5rem;
+}
+
+#list-page-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+/* 
+body {
+    height: 2000vh;
+} */
