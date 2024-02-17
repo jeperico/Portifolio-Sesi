@@ -27,14 +27,13 @@ main {
     position: absolute;
 }
 
-#hero-title {
+#hero-title, #hero-title span {
     color: var(--color-white);
     z-index: 1;
     font-size: var(--h1);
     position: absolute;
-    font-weight: 600;
-    text-align: center;
     line-height: 6rem;
+    font-family: 'Protest Guerrilla', sans-serif;
 }
 
 #hero-nav {
