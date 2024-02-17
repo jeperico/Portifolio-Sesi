@@ -1,0 +1,60 @@
+#header-area {
+    height: 8rem;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem 0 4rem;
+    position: sticky;
+    transition: top 1s;
+    left: 0;
+    z-index: 50;
+}
+
+.item-nav-page {
+    color: var(--color-white);
+}
+
+.header {
+    top: 0;
+}
+
+.scrollHide {
+    top: -30rem;
+}
+
+#logo-sesi-header {
+    transition: transform .5s;
+    height: 5rem;
+}
+
+#list-page-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+#cyber-button-nav {
+    background-color: var(--color-violet);
+    color: var(--color-white);
+    height: 3rem;
+    width: 9rem;
+    border-radius: 5px;
+    transition: background-color .5s, transform .5s;
+}
+
+#cyber-button-nav:hover {
+    transition: background-color .5s, transform .5s;
+    background-color: var(--color-pink1);
+    transform: translateY(-2px);
+}
+
+#logo-sesi-header:hover {
+    transition: transform .5s;
+    transform: translateY(-2px);
+}
+
+.item-nav-page:hover {
+    color: var(--color-white);
+    transform: translateX(30px);
+}

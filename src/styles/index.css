@@ -1,0 +1,38 @@
+body {
+    overflow-x: hidden;
+}
+
+main {
+    position: absolute;
+    top: -8rem;
+}
+
+#hero-area {
+    height: calc(100vh + 8rem);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#background {
+    background-image: url('./../assets/ds1-hero-logo-1000px.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+    filter: brightness(.1);
+    position: absolute;
+}
+
+#hero-title {
+    color: var(--color-white);
+    z-index: 1;
+    font-size: var(--h1);
+    position: absolute;
+    font-weight: 600;
+    text-align: center;
+    line-height: 6rem;
+}
