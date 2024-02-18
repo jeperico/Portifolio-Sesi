@@ -7,6 +7,9 @@ main {
     top: -8rem;
 }
 
+
+/* --> HERO SECTION <-- */
+
 #hero-area {
     height: calc(100vh + 8rem);
     width: 100vw;
@@ -59,4 +62,58 @@ main {
     width: 2px;
     background-color: var(--color-white);
     display: block;
+}
+
+
+/* --> MILL SECTION <-- */
+
+#mill-section {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10rem 0;
+}
+
+#mill-text-area {
+    width: 600px;
+    height: 100%;
+    margin: 0 5rem;
+}
+
+#mill-title, #reference-title {
+    font-size: var(--h2);
+    margin-bottom: 3rem;
+}
+
+#reference-title {
+    color: var(--color-violet);
+    font-family: 'Lucida Sans', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.mill-text {
+    font-size: var(--p1);
+    text-indent: 3rem;
+    text-align: justify;
+    margin-bottom: .5rem;
+}
+
+#mill-image-area {
+    margin: 0 5rem;
+}
+
+#mill-image {
+    max-width: 800px;
+    border: 3px solid var(--color-violet);
+    border-radius: .5rem .5rem 0 0;
+}
+
+#mill-image-caption {
+    background-color: var(--color-violet);
+    height: 2rem;
+    margin-top: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
 }
