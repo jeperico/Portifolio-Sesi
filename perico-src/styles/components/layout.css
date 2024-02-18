@@ -5,8 +5,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 5rem 0 4rem;
-    position: sticky;
-    transition: top 1s;
+    position: fixed;
+    transition: top .5s;
     left: 0;
     z-index: 50;
 }
