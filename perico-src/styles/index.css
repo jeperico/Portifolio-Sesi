@@ -27,12 +27,12 @@ main {
     position: absolute;
 }
 
-#hero-title, #hero-title span {
+#hero-title, #changed-number {
     color: var(--color-white);
     z-index: 1;
-    font-size: var(--h1);
+    font-size: 10rem;
     position: absolute;
-    line-height: 6rem;
+    line-height: 10rem;
     font-family: 'Protest Guerrilla', sans-serif;
 }
 
@@ -51,6 +51,7 @@ main {
 
 .hero-nav-option {
     font-size: var(--p1);
+    cursor: pointer;
 }
 
 .hero-nav-line {
