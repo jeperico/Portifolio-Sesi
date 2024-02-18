@@ -21,18 +21,41 @@ main {
     background-repeat: no-repeat;
     background-position: top center;
     width: 100vw;
-    height: 100%;
+    height: calc(100vh + 8rem);
     z-index: -1;
     filter: brightness(.1);
     position: absolute;
 }
 
-#hero-title {
+#hero-title, #hero-title span {
     color: var(--color-white);
     z-index: 1;
     font-size: var(--h1);
     position: absolute;
-    font-weight: 600;
-    text-align: center;
     line-height: 6rem;
+    font-family: 'Protest Guerrilla', sans-serif;
+}
+
+#hero-nav {
+    align-self: flex-end;
+    margin-bottom: 2rem;
+    font-size: var(--p2);
+}
+
+#hero-nav-area {
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero-nav-option {
+    font-size: var(--p1);
+}
+
+.hero-nav-line {
+    height: 1rem;
+    width: 2px;
+    background-color: var(--color-white);
+    display: block;
 }

@@ -12,7 +12,27 @@
 }
 
 .item-nav-page {
+    margin-right: 1rem;
     color: var(--color-white);
+    transition: transform .5s, box-shadow .5s;
+    height: 2.5rem;
+    width: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.item-nav-page > a {
+    color: var(--color-white);
+    font-size: var(--p1);
+    font-weight: 600;
+}
+
+.item-nav-page:hover {
+    transition: transform .5s, box-shadow .5s;
+    transform: translateY(-2px);
+    box-shadow: 0 0 10px var(--color-violet);
 }
 
 .header {
@@ -31,30 +51,28 @@
 #list-page-menu {
     display: flex;
     flex-direction: row;
-    gap: 5rem;
 }
 
 #cyber-button-nav {
     background-color: var(--color-violet);
     color: var(--color-white);
-    height: 3rem;
+    font-size: var(--p1);
+    height: 3.3rem;
     width: 9rem;
-    border-radius: 5px;
+    font-weight: 600;
+    border-radius: 8px;
     transition: background-color .5s, transform .5s;
+    margin-left: 3rem;
 }
 
 #cyber-button-nav:hover {
-    transition: background-color .5s, transform .5s;
-    background-color: var(--color-pink1);
+    transition: background-color .5s, transform .5s, color .5s;
+    background-color: var(--cr-yellow);
+    color: var(--color-black);
     transform: translateY(-2px);
 }
 
 #logo-sesi-header:hover {
     transition: transform .5s;
     transform: translateY(-2px);
-}
-
-.item-nav-page:hover {
-    color: var(--color-white);
-    transform: translateX(30px);
 }
