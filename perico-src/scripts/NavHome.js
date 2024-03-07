@@ -12,7 +12,7 @@ navItems.forEach(el => {
         switch (el.innerHTML) {
             case 'Moinho':
                 console.log('Rolou até Moinho');
-                scroll(500);
+                scroll(950);
                 break
             case 'DS1':
                 scroll(1000);

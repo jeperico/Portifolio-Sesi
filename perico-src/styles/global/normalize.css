@@ -7,6 +7,26 @@
     font-weight: 400;
 }
 
+h1 {
+    font-size: 89px;
+}
+
+h2 {
+    font-size: 55px;
+}
+
+h3 {
+    font-size: 34px;
+}
+
+h4 {
+    font-size: 21px;
+}
+
+h5 {
+    font-size: 13px;
+}
+
 hr {
     border: none;
 }
