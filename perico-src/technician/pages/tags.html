@@ -1,78 +1,227 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First HTML Document</title>
+    <!-- CSS imports -->
+    <link rel="stylesheet" href="./../../styles/global/normalize.css">
+    <link rel="stylesheet" href="./../../styles/global/variables.css">
+    <!-- Fonts imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!-- CSS Internal -->
+    <style>
+        header {
+            width: 100vw;
+            height: 100px;
+            background-color: #FFA9A3;
+            display: flex;
+            align-items: center;
+        }
+
+        #nav-area {
+            display: flex;
+            flex-direction: row;
+            gap: 12rem;
+            margin: auto;
+        }
+
+        #list-area {
+            display: flex;
+            justify-content: space-around;
+            gap: 5rem;
+        }
+
+        main {
+            background-color: #9CC3E6;
+        }
+
+        section {
+            padding: 5rem 10rem;
+        }
+
+        #about-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .about-text {
+            text-align: justify;
+            max-width: 500px;
+        }
+
+        #about-text-area {
+            display: flex;
+            gap: 5rem;
+            justify-content: space-between;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 20px;
+            padding: 3.5rem;
+        }
+
+        #tags-section {
+            display: flex;
+            gap: 5rem;
+        }
+
+        #basic-tags-list {
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 20px;
+            padding: 3.5rem;
+            width: fit-content;
+        }
+
+        .basic-tags {
+            margin: 5px 0;
+        }
+
+        .tags-title {
+            margin-bottom: 5rem;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            height: fit-content;
+            padding: 3rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        .about-me-social-item>a {
+            color: white;
+        }
+
+        #about-me-area {
+            display: flex;
+            gap: 5rem;
+            justify-content: space-between;
+        }
+
+        #footer-text>a {
+            color: white;
+            font-weight: bold;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <nav id="nav-area">
             <p id="logo-header">Hello HTML!</p>
             <menu id="list-area">
                 <li class="nav-element"><a href="#about-section" class="nav-link">About HTML</a></li>
-                <li class="nav-element"><a href="#basic-tags-section" class="nav-link">Basic Tags</a></li>
-                <li class="nav-element"><a href="#other-tags-section" class="nav-link">Other Tags</a></li>
+                <li class="nav-element"><a href="#tags-section" class="nav-link">Basic Tags</a></li>
+                <li class="nav-element"><a href="#tags-section" class="nav-link">Other Tags</a></li>
             </menu>
         </nav>
     </header>
     <main>
         <section id="about-section">
             <h1 id="about-title">HTML - HyperText Markup Language</h1>
-            <p class="about-text">HTML, HyperText Markup Language, traduzido para Linguagem de Marcação de Hipertexto é a linguagem de marcação usada para criar e projetar páginas web. Serve para definir a estrutura e o layout das páginas webs, ao qual incorporam textos, imagens, links, formulários, tabelas, videos, iframes entre outros elementos. O HTML é uma das ferramentas primordiais do WWW (World Wide Web), ao qual é comumente desenvolvido juntamente a <abbr title="Cascading Style Sheets">CSS</abbr> e <abbr title="JavaScript">JS</abbr></p>
-            <p class="about-text">Criado na década de 1990 por Tim Berners-Lee como parte do projeto para criar a WWW. Seu objetivo era facilitar o compartilhamento de documentos e informações entre pesquisadores da <abbr title="Organização Europeia para a Pesquisa Nuclear">CERN</abbr>, empresa ao qual ele trabalhava, porém o projeto se expandiu com proporções inemaginaveis.</p>
-            <p class="about-text">Atualmente, o HTML se encontra na versão HTML5, que trouxe melhorias significativas em relação ao HTML4. As principais mudanças que podem ser destacada são as melhorias de semântica, com adições de tags como <em>header</em> <em>footer</em> <em>section</em> <em>nav</em> e <em>asive</em>. Outras importantes adições foram as validações de formulários, elementos multimídias, a tag <em>canvas</em>, entre outros.</p>
+            <div id="about-text-area">
+                <p class="about-text">HTML, HyperText Markup Language, traduzido para Linguagem de Marcação de
+                    Hipertexto é
+                    a linguagem de marcação usada para criar e projetar páginas web. Serve para definir a estrutura e o
+                    layout das páginas webs, ao qual incorporam textos, imagens, links, formulários, tabelas, videos,
+                    iframes entre outros elementos. O HTML é uma das ferramentas primordiais do WWW (World Wide Web), ao
+                    qual é comumente desenvolvido juntamente a <abbr title="Cascading Style Sheets">CSS</abbr> e <abbr
+                        title="JavaScript">JS</abbr>.</p>
+                <p class="about-text">Criado na década de 1990 por Tim Berners-Lee como parte do projeto para criar a
+                    WWW.
+                    Seu objetivo era facilitar o compartilhamento de documentos e informações entre pesquisadores da
+                    <abbr title="Organização Europeia para a Pesquisa Nuclear">CERN</abbr>, empresa ao qual ele
+                    trabalhava,
+                    porém o projeto se expandiu com proporções inemaginaveis.</p>
+                <p class="about-text">Atualmente, o HTML se encontra na versão HTML5, que trouxe melhorias
+                    significativas em
+                    relação ao HTML4. As principais mudanças que podem ser destacada são as melhorias de semântica, com
+                    adições de tags como <em>header</em> <em>footer</em> <em>section</em> <em>nav</em> e <em>asive</em>.
+                    Outras importantes adições foram as validações de formulários, elementos multimídias, a tag
+                    <em>canvas</em>, entre outros.
+                </p>
+            </div>
         </section>
-        <section id="basic-tags-section">
-            <h2 id="basic-tags-title">Tags básicas em HTML</h2>
-            <ul id="basic-tags-list">
-                <li class="basic-tags">&lt;html&gt; - É a raíz do documento, serve como container de todas as outras tags em um documento HTML;</li>
-                <li class="basic-tags">&lt;head&gt; - Onde ficam as informações e metadados do documento, como imports e o título e favicon da página;</li>
-                <li class="basic-tags">&lt;body&gt; - Engloba todo o conteudo visível da página, é o nó pai de todo documento HTML;</li>
-                <li class="basic-tags">&lt;header&gt; - Representa a seção de cabeçalho da página;</li>
-                <li class="basic-tags">&lt;main&gt; - Representa a seção principal da página;</li>
-                <li class="basic-tags">&lt;div&gt; - Container genérico, sem valor semântica e normalmente utilizada para definir layouts;</li>
-                <li class="basic-tags">&lt;footer&gt; - Representa a seção de rodapé da página;</li>
-                <li class="basic-tags">&lt;hr&gt; - Representa uma divisória, normalmente marcada como uma linha horizontal;</li>
-                <li class="basic-tags">&lt;h1 até h6&gt; - São os títulos da página, em ordem semântica decrescente de importância;</li>
-                <li class="basic-tags">&lt;p&gt; - Define um parágrafo de texto;</li>
-                <li class="basic-tags">&lt;ul&gt; - É o container de uma lista não ordenada;</li>
-                <li class="basic-tags">&lt;li&gt; - Representa cada elemento de uma lista;</li>
-                <li class="basic-tags">&lt;br&gt; - Insere uma quebra de linha no texto.</li>
-            </ul>
-        </section>
-        <section id="other-tags-section">
-            <h2 id="other-tags-title">Outras tags em HTML</h2>
-            <ul id="basic-tags-list">
-                <li class="basic-tags">&lt;link&gt; - Utilizado no head do documento para importar arquivos externos;</li>
-                <li class="basic-tags">&lt;section&gt; - Representa uma separação semântica no documento;</li>
-                <li class="basic-tags">&lt;nav&gt; - É uma maneira semântica de criar menus de navegação;</li>
-                <li class="basic-tags">&lt;canvas&gt; - Fornece um espaço de criação de gráficos atravéz de JavaScript;</li>
-                <li class="basic-tags">&lt;form&gt; - Cria um formulário HTML;</li>
-                <li class="basic-tags">&lt;ol&gt; - É o container de uma lista ordenada;</li>
-                <li class="basic-tags">&lt;a&gt; - Direciona o elemento clicado até a pagina desejada atravez do atributo href;</li>
-                <li class="basic-tags">&lt;table&gt; - Cria u,a tabela HTML;</li>
-                <li class="basic-tags">&lt;input&gt; - Dependendo do type do input, cria um elemento que pega entradas do usuario;</li>
-                <li class="basic-tags">&lt;label&gt; - Redireciona o focus do usuario para o input correspondente quando clicado;</li>
-                <li class="basic-tags">&lt;button&gt; - Botão;</li>
-                <li class="basic-tags">&lt;style&gt; - Inicia ou linka CSS no documento;</li>
-                <li class="basic-tags">&lt;figure&gt; - Elemento semântico para imagens com legenda;</li>
-                <li class="basic-tags">&lt;strong&gt; - Deixa o texto em negrito de maneira semântica;</li>
-                <li class="basic-tags">&lt;em&gt; - Deixa o texto em italico de maneira semântica;</li>
-                <li class="basic-tags">&lt;span&gt; - Cria uma container inline semelhante a div;</li>
-                <li class="basic-tags">&lt;img&gt; - Adiciona uma imagem através do atributo src;</li>
-                <li class="basic-tags">&lt;iframe&gt; - Roda outra página dentro da página atual, muito utilizado com Google Maps ou Youtube.</li>
-            </ul>
+        <section id="tags-section">
+            <div id="division-tag-section">
+                <h2 class="tags-title">Tags básicas em HTML</h2>
+                <ul id="basic-tags-list">
+                    <li class="basic-tags">&lt;html&gt; - É a raíz do documento, serve como container de todas as outras
+                        tags em um documento HTML;</li>
+                    <li class="basic-tags">&lt;head&gt; - Onde ficam as informações e metadados do documento, como
+                        imports e
+                        o título e favicon da página;</li>
+                    <li class="basic-tags">&lt;body&gt; - Engloba todo o conteudo visível da página, é o nó pai de todo
+                        documento HTML;</li>
+                    <li class="basic-tags">&lt;header&gt; - Representa a seção de cabeçalho da página;</li>
+                    <li class="basic-tags">&lt;main&gt; - Representa a seção principal da página;</li>
+                    <li class="basic-tags">&lt;div&gt; - Container genérico, sem valor semântica e normalmente utilizada
+                        para definir layouts;</li>
+                    <li class="basic-tags">&lt;footer&gt; - Representa a seção de rodapé da página;</li>
+                    <li class="basic-tags">&lt;hr&gt; - Representa uma divisória, normalmente marcada como uma linha
+                        horizontal;</li>
+                    <li class="basic-tags">&lt;h1 até h6&gt; - São os títulos da página, em ordem semântica decrescente
+                        de
+                        importância;</li>
+                    <li class="basic-tags">&lt;p&gt; - Define um parágrafo de texto;</li>
+                    <li class="basic-tags">&lt;ul&gt; - É o container de uma lista não ordenada;</li>
+                    <li class="basic-tags">&lt;li&gt; - Representa cada elemento de uma lista;</li>
+                    <li class="basic-tags">&lt;br&gt; - Insere uma quebra de linha no texto.</li>
+                </ul>
+            </div>
+            <div id="division-tag-section">
+                <h2 class="tags-title">Outras tags em HTML</h2>
+                <ul id="basic-tags-list">
+                    <li class="basic-tags">&lt;link&gt; - Utilizado no head do documento para importar arquivos
+                        externos;
+                    </li>
+                    <li class="basic-tags">&lt;section&gt; - Representa uma separação semântica no documento;</li>
+                    <li class="basic-tags">&lt;nav&gt; - É uma maneira semântica de criar menus de navegação;</li>
+                    <li class="basic-tags">&lt;canvas&gt; - Fornece um espaço de criação de gráficos atravéz de
+                        JavaScript;
+                    </li>
+                    <li class="basic-tags">&lt;form&gt; - Cria um formulário HTML;</li>
+                    <li class="basic-tags">&lt;ol&gt; - É o container de uma lista ordenada;</li>
+                    <li class="basic-tags">&lt;a&gt; - Direciona o elemento clicado até a pagina desejada atravez do
+                        atributo href;</li>
+                    <li class="basic-tags">&lt;table&gt; - Cria u,a tabela HTML;</li>
+                    <li class="basic-tags">&lt;input&gt; - Dependendo do type do input, cria um elemento que pega
+                        entradas
+                        do usuario;</li>
+                    <li class="basic-tags">&lt;label&gt; - Redireciona o focus do usuario para o input correspondente
+                        quando
+                        clicado;</li>
+                    <li class="basic-tags">&lt;button&gt; - Botão;</li>
+                    <li class="basic-tags">&lt;style&gt; - Inicia ou linka CSS no documento;</li>
+                    <li class="basic-tags">&lt;figure&gt; - Elemento semântico para imagens com legenda;</li>
+                    <li class="basic-tags">&lt;strong&gt; - Deixa o texto em negrito de maneira semântica;</li>
+                    <li class="basic-tags">&lt;em&gt; - Deixa o texto em italico de maneira semântica;</li>
+                    <li class="basic-tags">&lt;span&gt; - Cria uma container inline semelhante a div;</li>
+                    <li class="basic-tags">&lt;img&gt; - Adiciona uma imagem através do atributo src;</li>
+                    <li class="basic-tags">&lt;iframe&gt; - Roda outra página dentro da página atual, muito utilizado
+                        com
+                        Google Maps ou Youtube.</li>
+                </ul>
+            </div>
+            <!-- </section>
+        <section id="other-tags-section"> -->
         </section>
     </main>
     <footer>
-        <p id="footer-text">Conheça mais do meu trabalho em minhas redes sociais abaixo ou veja com seus próprios olhos no site <a href="https://9611.team" target="_blank">9611.team</a></p>
+        <p id="footer-text">Conheça mais do meu trabalho em minhas redes sociais abaixo ou veja com seus próprios olhos
+            no site <a href="https://9611.team" target="_blank">9611.team</a></p>
         <div id="about-me-area">
             <ul id="about-me-social">
-                <li class="about-me-social-item"><a target="_blank" href="https://www.linkedin.com/in/jo%C3%A3o-eduardo-p%C3%A9rico-981967256/">Linkedin</a></li>
+                <li class="about-me-social-item"><a target="_blank"
+                        href="https://www.linkedin.com/in/jo%C3%A3o-eduardo-p%C3%A9rico-981967256/">Linkedin</a></li>
                 <li class="about-me-social-item"><a target="_blank" href="https://github.com/jeperico">GitHub</a></li>
-                <li class="about-me-social-item"><a target="_blank" href="https://www.instagram.com/_jeperico_/">Instagram</a></li>
-                <li class="about-me-social-item"><a target="_blank" href="./../../home-perico.html">Postifólio</a></li>
+                <li class="about-me-social-item"><a target="_blank"
+                        href="https://www.instagram.com/_jeperico_/">Instagram</a></li>
+                <li class="about-me-social-item"><a target="_blank" href="./../../home-perico.html">Portifólio</a></li>
 
             </ul>
             <ul id="about-me-list">
@@ -84,4 +233,5 @@
         </div>
     </footer>
 </body>
+
 </html>
