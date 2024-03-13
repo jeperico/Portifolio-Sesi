@@ -1,0 +1,46 @@
+* {
+    font-family: 'Outfit';
+    color: var(--white);
+}
+
+h1,
+h2,
+h3,
+p,
+span,
+div,
+cite {
+    font-weight: 400;
+}
+
+h1 {
+    font-size: var(--cr-h1);
+}
+
+h2 {
+    font-size: var(--cr-h2);
+}
+
+h3 {
+    font-size: var(--cr-h3);
+}
+
+h4 {
+    font-size: var(--cr-h4);
+}
+
+h5 {
+    font-size: var(--cr-h5);
+}
+
+cite,
+p {
+    font-size: var(--cr-rg-p);
+
+    /**
+     * Essa config deve ser testada com mais calma futuramente
+    **/
+    
+    /* font-size: 16px; */
+    /* letter-spacing: .25px; */
+}
