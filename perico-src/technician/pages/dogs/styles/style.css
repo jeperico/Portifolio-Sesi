@@ -1,0 +1,130 @@
+:root {
+    --color-bg: #18001D;
+    --color-white: white;
+    --color-black: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-white);
+}
+
+h1 {
+    font-size: 89px;
+}
+
+h2 {
+    font-size: 55px;
+}
+
+h3 {
+    font-size: 34px;
+}
+
+header {
+    margin-bottom: 5rem;
+}
+
+#header-title, #header-caption {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+#dogs-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.dog-name {
+    margin-bottom: 2rem;
+}
+
+.dog-image {
+    width: 500px;
+    border-radius: 0 3rem 0 3rem;
+    transition: filter .3s, transform .3s;
+}
+
+#middle-dog-image {
+    border-radius: 3rem 0 3rem 0;
+}
+
+.dog-caption {
+    margin-top: 1.5rem;
+    text-align: center;
+    text-shadow: 0 0 10px black;
+}
+
+#random-text-section {
+    margin-top: 15rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    transition: transform 1s, filter 1s;
+}
+
+.disable {
+    transform: translate(0, -3rem);
+    filter: opacity(0);
+}
+
+.active {
+    transform: translate(0);
+    filter: opacity(1);
+}
+
+#random-title {
+    width: 100vw;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.text-random {
+    max-width: 800px;
+    text-align: justify;
+}
+
+#random-image {
+    margin-top: 5rem;
+    border-radius: 50%;
+    height: 300px;
+    transition: border-radius .2s;
+}
+
+#random-image:hover {
+    border-radius: 0;
+}
+
+footer {
+    margin-top: 10rem;
+    height: fit-content;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.about-me-social-item>a {
+    color: white;
+}
+
+#about-me-area {
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+}
+
+#footer-text > a {
+    color: white;
+    font-weight: bold;
+}
