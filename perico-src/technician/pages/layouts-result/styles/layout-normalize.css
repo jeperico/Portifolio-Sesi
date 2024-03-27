@@ -1,0 +1,82 @@
+/* DEFFAULT SETTINGS*/
+:root {
+    --backgroun-color: #4472C4;
+    --color-yellow: #FFFF00;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+
+    --padding-section: 100px;
+    --gap: 60px;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--backgroun-color);
+}
+
+/* DEFFAULT SETTINGS*/
+
+
+
+/* NORMALIZE */
+.yellow {
+    background-color: var(--color-yellow);
+}
+
+#pokedex-section {
+    height: 100vh;
+    padding: var(--padding-section);
+}
+/* NORMALIZE */
+
+
+
+/* SET ALIGNS */
+.flex {
+    gap: var(--gap);
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+    gap: var(--gap);
+    display: flex;
+}
+/* SET ALIGNS */
+
+
+
+/* SET SIZES */
+.hgt-01 {
+    height: calc(((100vh - 200px) / 3));
+}
+
+.hgt-02 {
+    height: calc((((100vh - 200px) / 3) * 2) + (1 * var(--gap)));
+}
+
+.hgt-03 {
+    height: calc((100vh - 200px) + (2 * var(--gap)));
+}
+
+
+.wdt-01 {
+    width: calc((100vw - 200px) / 3);
+}
+
+/* .wdt-02 {
+    width: calc(((100vw - 200px) / 3) * 2);
+} */
+
+.wdt-03 {
+    width: calc(((100vw - 215px) / 3) * 3);
+}
+/* SET SIZES */
