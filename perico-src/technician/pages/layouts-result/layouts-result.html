@@ -59,43 +59,54 @@
                         <p>a</p>
                     </div>
                     <div class="yellow hgt-02 wdt-01">
-                        <div class="grid-container">
-                                <div class="stats-field">
-                                    <p>HP:</p>
-                                    <span class="stats-value" id="status-value-hp">~</span>
-                                    <progress max="255" value="5" class="status-bar" id="status-bar-hp"></progress>
-                                </div>
-                                <div class="stats-field">
-                                    <p>Attack:</p>
-                                    <span class="stats-value" id="status-value-atk">~</span>
-                                    <progress max="255" value="5" class="status-bar" id="status-bar-atk"></progress>
-                                </div>
-                                <div class="stats-field">
-                                    <p>Defense:</p>
-                                    <span class="stats-value" id="status-value-def">~</span>
-                                    <progress max="255" value="5" class="status-bar" id="status-bar-def"></progress>
-                                </div>
-                                <div class="stats-field">
-                                    <p>Sp. Atk:</p>
-                                    <span class="stats-value" id="status-value-sp-atk">~</span>
-                                    <progress max="255" value="5" class="status-bar" id="status-bar-sp-atk"></progress>
-                                </div>
-                                <div class="stats-field">
-                                    <p>Sp. Def:</p>
-                                    <span class="stats-value" id="status-value-sp-def">~</span>
-                                    <progress max="255" value="5" class="status-bar" id="status-bar-sp-def"></progress>
-                                </div>
-                                <div class="stats-field">
-                                    <p>Speed:</p>
-                                    <span class="stats-value" id="status-value-spe">~</span>
-                                    <progress max="255" value="5" class="status-bar" id="status-bar-spe"></progress>
-                                </div>
-                                <div class="stats-field">
-                                    <div class="grid-item">Total: <span id="status-value-all">~</span></div>
-                                </div>
-
+                        <div class="grid-container" id="poke-stats-table">
+                            <div class="stats-field" id="status-hp">
+                                <p>HP:</p>
+                                <span class="stats-value" id="status-value-hp">~</span>
+                                <progress max="180" class="status-bar" id="status-bar-hp"></progress>
                             </div>
-                        </div class="grid-container">
+                            <div class="stats-field" id="status-atk">
+                                <p>Attack:</p>
+                                <span class="stats-value" id="status-value-atk">~</span>
+                                <progress max="180" class="status-bar" id="status-bar-atk"></progress>
+                            </div>
+                            <div class="stats-field" id="status-def">
+                                <p>Defense:</p>
+                                <span class="stats-value" id="status-value-def">~</span>
+                                <progress max="180" class="status-bar" id="status-bar-def"></progress>
+                            </div>
+                            <div class="stats-field" id="status-sp-atk">
+                                <p>Sp. Atk:</p>
+                                <span class="stats-value" id="status-value-sp-atk">~</span>
+                                <progress max="180" class="status-bar" id="status-bar-sp-atk"></progress>
+                            </div>
+                            <div class="stats-field" id="status-sp-def">
+                                <p>Sp. Def:</p>
+                                <span class="stats-value" id="status-value-sp-def">~</span>
+                                <progress max="180" class="status-bar" id="status-bar-sp-def"></progress>
+                            </div>
+                            <div class="stats-field" id="status-spe">
+                                <p>Speed:</p>
+                                <span class="stats-value" id="status-value-spe">~</span>
+                                <progress max="180" class="status-bar" id="status-bar-spe"></progress>
+                            </div>
+                            <div class="stats-field" id="status-total">
+                                <p>Total:</p>
+                                <span id="status-value-all">~</span>
+                            </div>
+                        </div>
+                        <div class="grid-container" id="poke-infos-table">
+                            <div id="measure-container">
+                                <div class="poke-measure">
+                                    <p>Height:</p>
+                                    <span id="poke-heigth">~</span>
+                                </div>
+                                <div class="poke-measure">
+                                    <p>Weight:</p>
+                                    <span id="poke-weight">~</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

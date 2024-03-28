@@ -21,6 +21,7 @@ const renderPokemon = async (pokemon) => {
     
     if(data) {
         renderStats(pokemon);
+        renderMeasure(pokemon);
         pokeImage.style.display = 'block';
         pokeName.innerHTML = data.name;
         pokeNumber.innerHTML = data.id;
@@ -55,6 +56,15 @@ const renderStats = async (pokemon) => {
         statusValueTotal.innerHTML = som;
 }
 
+const height = document.querySelector('#poke-weight');
+const weight = document.querySelector('#poke-weight');
+const renderMeasure = async (pokemon) => {
+    const data = await fetchPokemon(pokemon);
+
+    height.innerHTML = data.height;
+    weight.innerHTML = data.weight;
+}
+
 const search = document.querySelector('#form-search');
 const inputSearch = document.querySelector('#input-search');
 
@@ -79,13 +89,3 @@ nextPoke.addEventListener('click', () => {
 
 
 renderPokemon('1');
-
-// https://pokeapi.co/api/v2/characteristic/{id}/
-
-// id - The identifier for this resource.
-// gene_modulo - The remainder of the highest stat/IV divided by 5.
-// possible_values - The possible values of the highest stat that would result in a Pokémon recieving this characteristic when divided by 5.
-// highest_stat - The stat which results in this characteristic.
-// descriptions - The descriptions of this characteristic listed in different languages.
-
-//
