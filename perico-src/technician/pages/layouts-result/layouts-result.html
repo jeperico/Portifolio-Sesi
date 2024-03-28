@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/layout-normalize.css">
     <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/pokedex.css">
     <script defer src="./scripts/main.js"></script>
 </head>
 <body>
@@ -40,7 +41,6 @@
         </section> -->
         <section id="pokedex-section" class="flex">
             <div class="yellow hgt-03 wdt-01">
-                <img src="" alt="PokeImage" id="pokemon-image">
             </div>
             <div class="flex-column">
                 <div class="yellow hgt-01 wdt-02">
@@ -52,13 +52,50 @@
                         <button class="button" id="button-prev">&lt Prev</button>
                         <button class="button" id="button-next">Next &gt</button>
                     </div>
+                    <img src="" alt="PokeImage" id="pokemon-image">
                 </div>
                 <div class="flex">
                     <div class="yellow hgt-02 wdt-01">
-
+                        <p>a</p>
                     </div>
                     <div class="yellow hgt-02 wdt-01">
-                        
+                        <div class="grid-container">
+                                <div class="stats-field">
+                                    <p>HP:</p>
+                                    <span class="stats-value" id="status-value-hp">~</span>
+                                    <progress max="255" value="5" class="status-bar" id="status-bar-hp"></progress>
+                                </div>
+                                <div class="stats-field">
+                                    <p>Attack:</p>
+                                    <span class="stats-value" id="status-value-atk">~</span>
+                                    <progress max="255" value="5" class="status-bar" id="status-bar-atk"></progress>
+                                </div>
+                                <div class="stats-field">
+                                    <p>Defense:</p>
+                                    <span class="stats-value" id="status-value-def">~</span>
+                                    <progress max="255" value="5" class="status-bar" id="status-bar-def"></progress>
+                                </div>
+                                <div class="stats-field">
+                                    <p>Sp. Atk:</p>
+                                    <span class="stats-value" id="status-value-sp-atk">~</span>
+                                    <progress max="255" value="5" class="status-bar" id="status-bar-sp-atk"></progress>
+                                </div>
+                                <div class="stats-field">
+                                    <p>Sp. Def:</p>
+                                    <span class="stats-value" id="status-value-sp-def">~</span>
+                                    <progress max="255" value="5" class="status-bar" id="status-bar-sp-def"></progress>
+                                </div>
+                                <div class="stats-field">
+                                    <p>Speed:</p>
+                                    <span class="stats-value" id="status-value-spe">~</span>
+                                    <progress max="255" value="5" class="status-bar" id="status-bar-spe"></progress>
+                                </div>
+                                <div class="stats-field">
+                                    <div class="grid-item">Total: <span id="status-value-all">~</span></div>
+                                </div>
+
+                            </div>
+                        </div class="grid-container">
                     </div>
                 </div>
             </div>
