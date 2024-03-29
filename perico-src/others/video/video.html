@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .video-src {
+      object-fit: cover;
+      height: 600px;
+      width: 300px;
+    }
+    .section-video-mobile {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="section-video-mobile">
+
+    <!-- <div class="video-wrapper" style=" position: relative; min-width: 272px; width: calc(100% - 80px); display: flex; align-items: center; justify-content: center;">
+      <video class="video-src video-js vjs-default-skin vjs-layout-medium" preload="auto" id="my-video" autoplay
+        style="width: 100% !important;" data-setup='{}' poster="{{ section.settings.video_poster_1 }}">
+        <source src="{{ section.settings.video_link_bg }}" type="video/mp4" />
+      </video>
+    </div> -->
+    <div class="video-wrapper">
+      <video class="video-src video-js vjs-default-skin vjs-layout-medium" poster="./golden-ball-04.jpg">
+        <source src="./video-placeholder.mp4">
+      </video>
+    </div>
+    <div class="video-wrapper">
+      <video class="video-src video-js vjs-default-skin vjs-layout-medium" poster="./golden-ball-03.jpg">
+        <source src="./video-placeholder.mp4">
+      </video>
+    </div>
+    <div class="video-wrapper">
+      <video class="video-src video-js vjs-default-skin vjs-layout-medium" poster="./golden-ball-02.jpg">
+        <source src="./video-placeholder.mp4">
+      </video>
+    </div>
+    <div class="video-wrapper">
+      <video class="video-src video-js vjs-default-skin vjs-layout-medium" poster="./golden-ball-01.jpg">
+        <source src="./video-placeholder.mp4">
+      </video>
+    </div>
+
+  </div>
+  <script>
+  const videos = document.querySelectorAll('.video-src');
+  let isPlay;
+
+  videos.forEach(video => {
+    video.addEventListener('mouseenter', () => {
+      playVideo(video);
+    })
+  })
+
+  function playVideo(videoP) {
+    pausePlay(videoP, isPlay);
+    videoP.play();
+    videoP.onended = () => {
+      videos.forEach((searchVideo, index) => {
+        if (searchVideo === videoP) index === videos.length - 1 ? playVideo(videos[0]) : playVideo(videos[index + 1]);
+      });
+    };
+  }
+
+  function pausePlay(videoPlay, isPlayVideo) {
+    if (isPlayVideo) {
+      videos.forEach(videoPause => videoPause.pause());
+      videoPlay.play();
+    }
+    isPlay = true;
+  }
+  </script>
+</body>
+</html>

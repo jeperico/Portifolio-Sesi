@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testeaa</title>
+</head>
+<body>
+  <button id="button">Click me to focus the input bottom</button>
+  <input type="text" id="input">
+  <script>
+    document.querySelector('#button').addEventListener('click', () => {
+      document.querySelector('#input').focus();
+    })
+  </script>
+</body>
+</html>
