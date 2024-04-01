@@ -1,3 +1,19 @@
+#pokemon-name {
+    text-transform: capitalize;
+}
+
+#pokemon-image {
+    width: 80%;
+    height: fit-content;
+    max-height: 85%;
+    border: 1px solid black;
+    border-radius: 1rem;
+    background-image: url('./../assets/background-pokemon.jpg');
+    background-position: center center;
+    background-size: cover;
+    padding: 1rem;
+}
+
 .stats-field {
     display: inline-grid;
     grid-template-columns: 40% 15% 40%;
@@ -91,11 +107,83 @@
     margin: 1rem 0;
 }
 
-.poke-measure {
+.poke-card {
     background-color: rgb(209, 214, 219);
     border-left: 3px solid lightslategray;
     border-bottom: 3px solid lightslategray;
-    padding: .5rem;
+    padding: .75rem;
     text-align: center;
 }
 /* CONFIG MEASURE-CONTAINER */
+
+
+
+
+/* CONFIG ABILITIES-CONTAINER */
+.abilities-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.title-abilities {
+    color: black;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.poke-card-ability {
+    margin-bottom: .5rem;
+    text-align: justify;
+    text-transform: capitalize;
+}
+
+#description-card-abilities {
+    position: relative;
+    display: none;
+    text-align: justify;
+}
+
+#x-icon-asset {
+    width: 2rem;
+    position: absolute;
+    right: 6%;
+    top: 10%;
+}
+
+#description-ability-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    text-transform: capitalize;
+    max-width: 87%;
+}
+
+/* CONFIG ABILITIES-CONTAINER */
+
+/* Aa */
+#poke-stats-table {
+    background-color: white;
+}
+
+#pokemon {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pokedex-card {
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.pokedex-image {
+    width: 60px;
+    height: 60px;
+}

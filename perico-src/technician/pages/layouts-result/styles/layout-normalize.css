@@ -27,9 +27,9 @@ body {
 
 
 /* NORMALIZE */
-.yellow {
+/* .yellow {
     background-color: var(--color-yellow);
-}
+} */
 
 #pokedex-section {
     height: 100vh;

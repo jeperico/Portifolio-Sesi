@@ -30,33 +30,30 @@
                     required/>
                 </form>
             </ul>
-            <!-- <div id="search-field">
-                <button id="search-field"></button>
-            </div> -->
         </nav>
     </header>
     <main>
-        <!-- <section id="pokedex-apresentation-section">
-
-        </section> -->
         <section id="pokedex-section" class="flex">
             <div class="yellow hgt-03 wdt-01">
+                <div class="pokedex-card">
+                    <img alt="PokeImage" class="pokedex-image">
+                    <p class="pokedex-number">#~~~</p>
+                </div>
             </div>
             <div class="flex-column">
                 <div class="yellow hgt-01 wdt-02">
-                    <h1 id="pokemon-title">
-                        <span id="pokemon-number">PókeNumber</span> -
-                        <span id="pokemon-name">PókeTitle</span>
-                    </h1>
-                    <div id="buttons">
-                        <button class="button" id="button-prev">&lt Prev</button>
-                        <button class="button" id="button-next">Next &gt</button>
-                    </div>
-                    <img src="" alt="PokeImage" id="pokemon-image">
                 </div>
                 <div class="flex">
                     <div class="yellow hgt-02 wdt-01">
-                        <p>a</p>
+                        <h1 id="pokemon-title">
+                            <span id="pokemon-number">PókeNumber</span> -
+                            <span id="pokemon-name">PókeTitle</span>
+                        </h1>
+                        <div id="buttons">
+                            <button class="button" id="button-prev">&lt Prev</button>
+                            <button class="button" id="button-next">Next &gt</button>
+                        </div>
+                        <img alt="PokeImage" id="pokemon-image">
                     </div>
                     <div class="yellow hgt-02 wdt-01">
                         <div class="grid-container" id="poke-stats-table">
@@ -97,14 +94,30 @@
                         </div>
                         <div class="grid-container" id="poke-infos-table">
                             <div id="measure-container">
-                                <div class="poke-measure">
+                                <div class="poke-card">
                                     <p>Height:</p>
-                                    <span id="poke-heigth">~</span>
+                                    <span id="poke-height">~</span>
                                 </div>
-                                <div class="poke-measure">
+                                <div class="poke-card">
                                     <p>Weight:</p>
                                     <span id="poke-weight">~</span>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="abilities-container" id="ability-container">
+                            <p class="title-abilities">Default Abilities:</p>
+                            <div id="default-abities">
+                                <!-- <p class="poke-card">Overgrow</p> -->
+                            </div>
+                            <div id="hidden-abilities">
+                                <p class="title-abilities">Hidden Abilities:</p>
+                                <div id="hidden-abilities-container"></div>
+                            </div>
+                        </div>
+                        <div class="abilities-container" id="description-card-abilities">
+                            <img src="./assets/x-icon.svg" id="x-icon-asset">
+                            <p id="description-ability-title"></p>
+                            <div id="description-card-text">
                             </div>
                         </div>
                     </div>
