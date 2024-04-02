@@ -152,17 +152,26 @@ nextPoke.addEventListener('click', () => {
     renderPokemon(searchNum);
 });
 
-// const fetchPokemon = async (pokemon) => {
-
-//     const APIResponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
-
-//     if(APIResponse.status === 200) {
-//         const data = await APIResponse.json();   
-//         return data;
-//     }
-// }
 
 
+const fetchAllPokemon = async () => {
 
+    for (let i; i <= 1000; i++) {
+        renderPokedex(renderPokemon(i));
+    }
+}
+
+const listPokedex = document.querySelector('#poke-list');
+const renderPokedex = async function() {
+    const data = await fetchPokemon(pokemon);
+
+    const pokedexCard = document.createElement("div");
+    const pokedexImage = document.createElement("img");
+    const pokedexNumber = document.createElement("p")
+    abilityCard.classList.add('poke-card');
+    abilityCard.classList.add('poke-card-ability');
+    abilityCard.innerHTML = ability.ability.name
+}
 
 renderPokemon('1');
+renderPokedex();
