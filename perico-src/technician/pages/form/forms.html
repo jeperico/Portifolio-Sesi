@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style/layout-normalize.css">
+        <title>Forms</title>
+    </head>
+    <body>
+        <form   action="processamento.php"  method="get">
+            <label for="nome">Nome:
+                <input type="text" id="nome"    name="nome" placeholder="Digite seu nome">
+            </label>
+
+            <label for="email">E-mail:
+                <input type="email" id="email" placeholder="Digite seu e-mail">
+            </label>
+
+            <label for="senha">Senha:
+                <input type="password" id="senha" minlength="8"
+                    placeholder="No minimo 8 caracters">
+            </label>
+
+            <label for="nascimento">Nascimento:
+                <input type="date" id="nascimento"
+                    placeholder="Digite sua data de nascimento">
+            </label>
+
+            <label for="estadocivil">Estado Civil:
+                <input type="radio" name="ec">Solteiro(a)
+                <input type="radio" name="ec">Casado(a)
+                <input type="radio" name="ec">Divorciado(a)
+                <input type="radio" name="ec" id="estadocivil" checked>Viúvo(a)
+            </label>
+
+            <label for="idade">Idade:
+                <input type="number" id="idade" placeholder="Digite sua idade">
+            </label>
+
+            <label for="endereco">endereço:
+                <input value="Joinville" type="text" id="endereco"
+                    placeholder="Digite seu endereço">
+            </label>
+
+            <label for="complemento">Complemento
+                <textarea id="complemento" rows="1"></textarea>
+            </label>
+
+            <label for="uf"> Estado:
+                <select id="uf">
+                    <option value>Selecione a UF...</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal*</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Mina Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Jaineiro</option>
+                    <option value="RN">Ria Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC" selected>Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </label>
+
+            <label  for="termo">
+                <input  type="checkbox" id="termo">Li e aceito os termos de uso.
+            </label>
+            <label  for="promo">
+                <input  type="checkbox" id="promo"  checked>Aceito receber novidades e promoção por e-mail.
+            </label>
+
+            <input  type="reset"    value="Limpar">
+            <input  type="hidden"   name="">
+            <input  type="submit"   value="Enviar">
+        </form>
+    </body>
+</html>
