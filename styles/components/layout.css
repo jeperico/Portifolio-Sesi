@@ -64,6 +64,7 @@
     border-radius: 8px;
     transition: background-color .5s, transform .5s;
     margin-left: 3rem;
+    cursor: pointer;
 }
 
 #cyber-button-nav:hover {
