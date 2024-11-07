@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questões sobre Álcoois</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #4c3b75;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Contêiner principal */
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            color: #fff;
+            border-radius: 8px;
+        }
+
+        /* Estilos de título */
+        h1 {
+            text-align: center;
+            color: #fff;
+            font-size: 1.5em;
+        }
+
+        /* Estilos das perguntas */
+        .question {
+            margin: 15px 0;
+        }
+
+        .question-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #fff;
+        }
+
+        /* Estilos da resposta */
+        .answer {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #3a2e5a;
+            border-left: 4px solid #4c3b75;
+            border-radius: 4px;
+            color: #e0e0e0;
+        }
+
+        /* Botão para revelar resposta */
+        .toggle-btn {
+            margin-top: 5px;
+            padding: 8px 12px;
+            background-color: #3a2e5a;
+            border: none;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .toggle-btn:hover {
+            background-color: #6b5fa3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Questões sobre Álcoois</h1>
+        
+        <!-- Pergunta 1 -->
+        <div class="question">
+            <div class="question-title">1. O que caracteriza um composto orgânico como pertencente à função álcool? Qual é o grupo funcional presente?</div>
+            <button class="toggle-btn" onclick="toggleAnswer(1)">Mostrar Resposta</button>
+            <div id="answer1" class="answer">
+                Um composto orgânico é classificado como álcool quando o grupo funcional, a hidroxila (-OH), está ligado a um átomo de carbono saturado. O grupo funcional dos álcoois é a hidroxila.
+            </div>
+        </div>
+
+        <!-- Pergunta 2 -->
+        <div class="question">
+            <div class="question-title">2. Diferencie os álcoois primários, secundários e terciários em termos da posição do grupo hidroxila (-OH) na cadeia carbônica. Dê um exemplo de cada.</div>
+            <button class="toggle-btn" onclick="toggleAnswer(2)">Mostrar Resposta</button>
+            <div id="answer2" class="answer">
+                <strong>Álcoois Primários:</strong> Carbono do grupo hidroxila ligado a um carbono. Ex.: Etanol (C₂H₅OH).<br>
+                <strong>Álcoois Secundários:</strong> Carbono do grupo hidroxila ligado a dois carbonos. Ex.: Propanol (C₃H₈O).<br>
+                <strong>Álcoois Terciários:</strong> Carbono do grupo hidroxila ligado a três carbonos. Ex.: Metilpropanol (C₄H₉OH).
+            </div>
+        </div>
+
+        <!-- Pergunta 3 -->
+        <div class="question">
+            <div class="question-title">3. Escreva a fórmula estrutural do propanol (C₃H₇OH) e explique por que ele é classificado como um álcool primário.</div>
+            <button class="toggle-btn" onclick="toggleAnswer(3)">Mostrar Resposta</button>
+            <div id="answer3" class="answer">
+                O grupo hidroxila está ligado a apenas um átomo de carbono, logo, é classificado como um álcool primário. <br>
+                Estrutura:<br>
+                H₃C-CH₂-CH₂-OH
+            </div>
+        </div>
+
+        <!-- Pergunta 4 -->
+        <div class="question">
+            <div class="question-title">4. Quais são os principais métodos de produção industrial do etanol? Explique brevemente o processo de fermentação.</div>
+            <button class="toggle-btn" onclick="toggleAnswer(4)">Mostrar Resposta</button>
+            <div id="answer4" class="answer">
+                Os métodos principais são fermentação e hidratação do etileno. No processo de fermentação, a glicose e outros açúcares são transformados em etanol e gás carbônico por leveduras anaeróbicas.
+            </div>
+        </div>
+
+        <!-- Pergunta 5 -->
+        <div class="question">
+            <div class="question-title">5. O metanol (CH₃OH) é considerado um álcool tóxico. Explique quais são os riscos do seu consumo e os efeitos no organismo.</div>
+            <button class="toggle-btn" onclick="toggleAnswer(5)">Mostrar Resposta</button>
+            <div id="answer5" class="answer">
+                O metanol é tóxico pois, quando metabolizado, transforma-se em formaldeído e ácido fórmico, causando problemas no sistema nervoso central e em outros tecidos. Pode resultar em dor abdominal, náusea, perda de visão, e até morte.
+            </div>
+        </div>
+
+        <!-- Pergunta 6 -->
+        <div class="question">
+            <div class="question-title">6. Explique qual é o álcool utilizado nas bebidas, e qual é a regra para o bafômetro. Coloque com detalhes os índices de álcool no sangue e o comportamento humano diante destes valores.</div>
+            <button class="toggle-btn" onclick="toggleAnswer(6)">Mostrar Resposta</button>
+            <div id="answer6" class="answer">
+                O etanol (C₂H₅OH) é o álcool presente nas bebidas. O bafômetro mede a concentração de etanol no ar expirado.<br>
+                <strong>0,2 - 0,5 g/L:</strong> leve euforia, diminuição da atenção.<br>
+                <strong>0,5 - 1,5 g/L:</strong> comprometimento da coordenação e reflexos reduzidos.<br>
+                <strong>1,5 - 3 g/L:</strong> confusão, dificuldade de fala.<br>
+                <strong>&gt; 3 g/L:</strong> risco de coma e morte.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(id) {
+            const answer = document.getElementById('answer' + id);
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
