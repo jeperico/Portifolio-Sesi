@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Física</title>
+    <!-- CSS imports -->
+    <link rel="stylesheet" href="./styles/global/normalize.css">
+    <link rel="stylesheet" href="./styles/global/variables.css">
+    <link rel="stylesheet" href="./styles/components/layout.css">
+    <link rel="stylesheet" href="./styles/physics.css">
+    <!-- Fonts imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        header a img {
+            height: 50px;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        #physics-links {
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            text-align: center;
+        }
+
+        #physics-links h2 {
+            margin-bottom: 20px;
+        }
+
+        .link-item {
+            display: block;
+            margin: 15px 0;
+            color: #007BFF;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .link-item:hover {
+            text-decoration: underline;
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            border: none;
+            border-radius: 8px;
+            margin: 20px auto;
+            display: block;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: white;
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">
+            <img src="../assets/logo-sesi.png" alt="Logo SESI" id="logo-sesi-header">
+        </a>
+        <h1>Física</h1>
+    </header>
+    <main>
+        <section id="physics-links">
+            <h2>Links de Física</h2>
+            <iframe 
+                src="https://www.youtube.com/embed/TE-4npm23v0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+            <ul>
+                <li>
+                    <a href="https://youtu.be/TE-4npm23v0" target="_blank" class="link-item">
+                        🎥 Vídeo no YouTube
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.canva.com/design/DAGXspj1PJ8/FO66MJnkUUb_TpNHmF8j7w/edit?utm_content=DAGXspj1PJ8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="link-item">
+                        🎨 Design no Canva
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 SESI de Referência</p>
+    </footer>
+</body>
+
+</html>
